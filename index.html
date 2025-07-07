@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo Musical</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Catálogo Musical</h1>
+    <div class="filtros">
+      <select id="filtro">
+        <option value="todos">Todos</option>
+        <option value="guitarra">Guitarras</option>
+        <option value="bajo">Bajos</option>
+        <option value="teclado">Teclados</option>
+      </select>
+      <button id="verFavoritos">⭐ Favoritos</button>
+      <button id="modoOscuro">🌙 Modo Oscuro</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="productos"></div>
+  </main>
+
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.oscuro {
+  background-color: #1e1e1e;
+  color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.producto {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.oscuro .producto {
+  background-color: #2c2c2c;
+}
+
+.producto h3 {
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  margin: 5px 0;
+}
+
+.producto button {
+  background-color: transparent;
+  border: 1px solid #aaa;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.img-producto {
+  width: 100%;
+  max-height: 400px;
+  aspect-ratio: 4 / 3; /* Siempre misma proporción */
+  object-fit: contain; /* Para que no se recorte nada */
+  background-color: #ffffff; /* Fondo por si la imagen no llena todo */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #productos {
+    grid-template-columns: 1fr;
+  }
+}
