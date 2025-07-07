@@ -33,7 +33,7 @@ Este es un mini proyecto web hecho con **HTML, CSS y JavaScript** que simula un 
 
 ## 🔗 Enlace al proyecto
 
-👉 [Ver en línea](https://tonimartinez-tm.github.io/tu-nombre-repo/)  
+👉 [Ver en línea](https://tonimartinez-tm.github.io/productos-musicales/)  
 *(reemplazá con tu enlace real de GitHub Pages)*
 
 ---
